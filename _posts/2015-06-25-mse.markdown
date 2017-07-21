@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Mean-Squared Error (MSE)"
+date:   2015-06-25
+categories: statistics
+---
+
+

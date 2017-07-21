@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "Sensitivity, Specificity, Accuracy, Precision..."
+date:   2015-06-26
+categories: statistics
+---
+
+La sensibilité, la spécificité ou la précision sont des métriques permettant d’évaluer la performance d’un test de classification binaire (ex: true/false). Les données sont séparées en 2 catégories selon les catégories testées.
+
+* La sensibilité (sensitivity ou recall) indique comment le test prédit une catégorie (True).
+* La spécificité (specificity) indique comment le test prédit l’autre catégorie (False)
+* La precision indique comment le test  prédit les 2 catégories parmi le set sélectionné.
+* L’accuracy indique comment le test prédit les 2 catégories parmi l’ensemble des données
+
+Pour aider à visualiser les ensembles comparés, il est possible de s'aider d'une représentation graphique. 
+
+![Error: image not found !]({{site.url}}/images/sen-spe.png)
+
+#### Sensitivity or Recall or True Positive Rate
+
+La sensibilité répond à la question: Combien d'éléments sont sélectionnés parmi l'ensemble des éléments pertinents.
+
+représentation graphique : ![Error: image not found !]({{site.url}}/images/sensitivity.png)
+
+formule de calcul : \\( TPR=\frac{True Positives}{True Positives + False Negatives} \\)
+
+#### Specifity or True Negative Rate
+
+La spécificité répond à la question : Combien d’éléments non pertinents ont bien été détéctés comme non pertinents. 
+
+représentation graphique : ![Error: image not found !]({{site.url}}/images/specificity.png)
+
+
+formule de calcul : \\( SPC=\frac{True Negatives}{True Negatives + False Positives} \\)
+
+#### Cas des « precision » et « accuracy »
+
+Il existe aussi les valeurs de precision et accuracy. Je ne traduis volontairement pas ces expressions qui pourraient se faire avec le même mot, mais qui ont des valeurs différentes en termes d’analyse de classification binaire.
+
+#### Precision
+
+La "precision" répond à la question : Combien d’éléments sélectionnés sont véritablement pertinents ?
+
+représentation graphique : ![Error: image not found !]({{site.url}}/images/precision.png)
+
+
+formule de calcul : \\( Precision (or Positive Predictive Values)=\frac{True Positives}{True Positives + False Positives} \\)
+
+#### Accuracy
+
+L "accuracy" répond à la question : Combien d’éléments sont bien classifiés parmi l’ensemble des éléments. 
+
+représentation graphique : ![Error: image not found !]({{site.url}}/images/accuracy.png)
+
+
+formule de calcul : \\( Accuracy=\frac{True Positives + True Negatives}{True Positives + False Negatives + True Negatives + False Positives} \\)
+
+#### Discussion
+
+Le.. très utilisés pour tester les outils et leurs résultats .. benchmark ... Il n'est pas toujours possible de calculer les différentes métriques ... ex pas les ... du coup blabla (discuter données de test d'outils) ex données réelles manque de maîtrise ... du coup données simulées.
+
+Pour aller plus loin le site [wikipedia][wikipedia] propose un article très détaillé.
+
+
+[wikipedia]: https://en.wikipedia.org/wiki/Sensitivity_and_specificity

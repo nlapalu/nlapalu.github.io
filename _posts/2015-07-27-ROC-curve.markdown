@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Receiver Operating Characteristic (ROC) curve"
+createdate:   2015-07-27
+lastupdate:   2015-07-27
+categories: "statistics"
+---
+
+à voir pour l'article 
+- wikipedia
+- papiers :
+
+https://fr.wikipedia.org/wiki/Receiver_Operating_Characteristic
+
+http://bioinformatics.oxfordjournals.org/content/early/2015/07/20/bioinformatics.btv417.full.pdf+html (Systems biology 
+Identifying novel associations between small molecules and 
+miRNAs based on integrated molecular networks )
+
+http://link.springer.com/article/10.1007%2Fs10463-009-0264-y (A boosting method for maximization of the area under the R
+OC curve )
+
+http://www.sciencedirect.com/science/article/pii/S0888613X0700031X (http://www.sciencedirect.com/science/article/pii/S08
+88613X0700031X)
+
+

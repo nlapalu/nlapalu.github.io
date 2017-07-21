@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Densité"
+createdate:   2015-07-27
+lastupdate:   2015-07-27
+categories: "statistics"
+---
+
+à voir pour l'article 
+- wikipedia
+- papiers :
+
+fonction de densité : voir
+
+http://forums.cirad.fr/logiciel-R/viewtopic.php?t=1040
+https://fr.wikipedia.org/wiki/Densit%C3%A9_de_probabilit%C3%A9
+http://f1000research.com/posters/4-213
+ 
