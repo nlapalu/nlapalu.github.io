@@ -34,6 +34,18 @@ layout: default
       </li>
     {% endfor %}
   </ul>
+  <ul class="post-list">
+    {% for slide in site.slides %}
+      <li>
+        <span class="post-meta">{{ slide.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ slide.url | prepend: site.baseurl }}">{{ slide.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
