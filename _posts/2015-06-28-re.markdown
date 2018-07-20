@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "SSH Filesystem (sshfs)"
+date:   2015-06-82
+categories:  "linux"
+---
+Sshfs permet de monter un filesystem via le réseau par le protocle ssh, avec les droits utilisateurs associés. Cela permet de travailler directement sur le filesystem depuis un autre serveur. Ceci évite l'utilisation de ssh, scp, sftp ou encore de devoir installer les logiciels sur le serveur distant.
+
+# Installation et configuration (CentOS 7)
+
+{% highlight bash %}
+yum search sshfs -v
+Chargement du module complémentaire « fastestmirror »
+Chargement du module complémentaire « langpacks »
+Adding fr_FR.UTF-8 to language list
+Config time: 0.011
+Yum version: 3.4.3
+Configuration du groupe de paquets
+Loading mirror speeds from cached hostfile
+ * base: ftp.ciril.fr
+ * epel: mirror.fraunhofer.de
+ * extras: mirror0.babylon.network
+ * updates: ftp.ciril.fr
+pkgsack time: 22.249
+rpmdb time: 0.000
+tags time: 0.000
+============================== N/S matched: sshfs ==============================
+fuse-sshfs.x86_64 : FUSE-Filesystem to access remote filesystems via SSH
+Dépôt               : epel
+{% endhighlight %}
+
+Le paquet est dans le dépôt epel. Il faut donc avoir configuré le dépôt avant.
+
+{% highlight bash %}
+yum install fuse-sshfs
+{% endhighlight %}
+
+
+# Activation en mode CLI
+
+montage d'un dossier distant dans un dossier local vide
+{% highlight bash %}
+sshfs username@servername:/distant_dir /local_dir
+{% endhighlight %}
+démontage du dossier
+{% highlight bash %}
+fusermount -u /local_dir
+{% endhighlight %}
+
+
+Il est possible de rendre persistent la connexion en spécifiant le point de montage dans le fichier /etc/fstab. Pour plus d'info voir l'exemple proposé dans la [documentation ubuntu][doc-ubuntu], avec notamment les aspect montage après activation du réseau.
+
+[doc-ubuntu]: http://doc.ubuntu-fr.org/sshfs
