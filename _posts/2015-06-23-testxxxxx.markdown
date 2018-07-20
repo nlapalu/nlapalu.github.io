@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: slide
 title: Jekyll test
 date:   2015-06-24
 categories: "linux"
