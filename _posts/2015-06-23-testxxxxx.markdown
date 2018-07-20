@@ -1,9 +1,8 @@
 ---
 layout: post
-title: Jekyll Make presentation page with reveal.js description: A presentation slide for how to use reveal.js in Jekyll theme: black
+title: Jekyll test
 date:   2015-06-24
 categories: "linux"
-transition: slide
 ---
 
 
