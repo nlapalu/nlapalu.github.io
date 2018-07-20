@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "SSH Filesystem (sshfs)"
-date:   2015-06-82
+date:   2015-06-28
 categories:  "linux"
 ---
 Sshfs permet de monter un filesystem via le réseau par le protocle ssh, avec les droits utilisateurs associés. Cela permet de travailler directement sur le filesystem depuis un autre serveur. Ceci évite l'utilisation de ssh, scp, sftp ou encore de devoir installer les logiciels sur le serveur distant.
